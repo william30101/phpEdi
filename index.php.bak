@@ -1,0 +1,21 @@
+
+<script> function fileName(name) {
+    var txt=document.getElementById("sensorname").value;
+    txt=txt + name;
+    document.getElementById("result").value=txt;
+    }
+</script>
+
+<html>
+<body>
+<div class="main">
+<form action="viewdata.php" method="post">
+Please Input sensor name :
+<input type="text" name="sensorname" size="67"><br / >
+<input type="submit" value="EC" name="ecbtn" onclick="fillName()">
+<input type="submit" value="PH" name="phbtn" onclick="fillName()">
+<input type="submit" value="TEMP" name="tempbtn" onclick="fillName()">
+
+</form>
+</body>
+</html>
