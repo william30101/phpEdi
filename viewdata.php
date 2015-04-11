@@ -22,6 +22,13 @@ if (!is_null($_POST[tempbtn]))
 
 }
 
+if (!is_null($_POST[earthbtn]))
+{
+	$SensorName=$_POST[earthbtn];
+
+}
+
+
 #$SensorName=$_POST[ecbtn];
 echo ' sensor name = '.$SensorName."\n<br>";
 
